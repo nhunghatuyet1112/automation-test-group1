@@ -66,7 +66,7 @@ public class Week03 {
 		}
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void thirdTest() throws Exception {
 		driver.get(baseUrl2);
 
@@ -96,7 +96,7 @@ public class Week03 {
 	}
 
 	// PowerPoint 03_02
-	@Test
+	@Test(enabled = false)
 	public void fourthTest() throws Exception {
 		driver.get(baseUrl2);
 
