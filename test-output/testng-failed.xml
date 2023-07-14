@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" parallel="tests" name="Failed suite [Gmail Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="flipkart(failed)">
     <classes>
-      <class name="exercise.Week05">
+      <class name="exercise.Week06">
         <methods>
-          <include name="test"/>
-          <include name="beforeTest"/>
+          <include name="goBackToHome"/>
           <include name="afterTest"/>
+          <include name="verifyLoginSuccessfully"/>
+          <include name="beforeTest"/>
+          <include name="verifyHomepageTitle"/>
+          <include name="verifyFindFlightTicket"/>
         </methods>
-      </class> <!-- exercise.Week05 -->
+      </class> <!-- exercise.Week06 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- flipkart(failed) -->
+</suite> <!-- Failed suite [Gmail Suite] -->
