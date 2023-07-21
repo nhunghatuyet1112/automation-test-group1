@@ -5,8 +5,8 @@
     <classes>
       <class name="orangeHRM.deleteCustomer">
         <methods>
-          <include name="TR_OHRM_DC_02"/>
           <include name="beforeTest"/>
+          <include name="TC_OHRM_DC_05"/>
         </methods>
       </class> <!-- orangeHRM.deleteCustomer -->
     </classes>
