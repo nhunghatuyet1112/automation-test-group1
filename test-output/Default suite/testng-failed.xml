@@ -3,17 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="exercise.Week06">
+      <class name="orangeHRM.deleteCustomer">
         <methods>
-          <include name="goBackToHome"/>
-          <include name="afterTest"/>
+          <include name="TR_OHRM_DC_02"/>
           <include name="beforeTest"/>
-          <include name="verifyLoginSuccessfully"/>
-          <include name="verifyFindFlightTicket"/>
-          <include name="verifyHomepageTitle"/>
-          <include name="verifyRegisterSuccessfully"/>
         </methods>
-      </class> <!-- exercise.Week06 -->
+      </class> <!-- orangeHRM.deleteCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
