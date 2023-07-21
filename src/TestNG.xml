@@ -5,7 +5,8 @@
 
 	<test name="exercise">
 		<classes>
-			<class name="exercise.Week06" />
+			<class name="exercise.DemoA" />
+			<class name="exercise.DemoB" />
 		</classes>
 	</test>
 
