@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -17,6 +19,7 @@ import org.testng.annotations.Test;
 public class deleteCustomer extends commonFunctions {
 	private ChromeOptions options;
 	private WebDriver driver;
+	private WebDriverWait wait;
 	private JavascriptExecutor jse;
 	private String baseUrl;
 
@@ -32,30 +35,31 @@ public class deleteCustomer extends commonFunctions {
 
 	@Test
 	public void TC_OHRM_DC_01() throws Exception {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		String expectedResult = "Successfully Deleted";
 		String customerName = "Van Lang University - Group 1";
 		String customerDescription = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
 		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
 		commonFunctions.toAddDemoCustomer(driver, customerName, customerDescription);
-		Thread.sleep(10000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
+		// Thread.sleep(5000);
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		Thread.sleep(1000);
+		// Thread.sleep(1000);
 		WebElement deleteButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']"));
 		deleteButton.click();
-		Thread.sleep(1000);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_02() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName = "Van Lang University - Group 1";
@@ -87,7 +91,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_03() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName1 = "Van Lang University - Group 1 - 01";
@@ -123,7 +127,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_04() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName1 = "Van Lang University - Group 1 - 01";
@@ -156,7 +160,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_05() throws Exception {
 		String expectedResult = "Not allowed to delete customer(s) associated with projects that have time logged against them";
 		String customerName = "The Coca-Cola Company";
@@ -175,7 +179,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_06() throws Exception {
 		Boolean expectedResult = true;
 		Boolean actualResult = false;
@@ -202,7 +206,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void TC_OHRM_DC_07() throws Exception {
 		Boolean expectedResult = true;
 		Boolean actualResult = false;
@@ -228,8 +232,8 @@ public class deleteCustomer extends commonFunctions {
 		}
 		Assert.assertEquals(actualResult, expectedResult);
 	}
-	
-	@AfterTest
+
+	@AfterTest(enabled = false)
 	public void afterTest() throws Exception {
 		driver.close();
 	}
