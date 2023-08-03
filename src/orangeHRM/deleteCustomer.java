@@ -20,7 +20,6 @@ public class deleteCustomer extends commonFunctions {
 	private ChromeOptions options;
 	private WebDriver driver;
 	private WebDriverWait wait;
-	private JavascriptExecutor jse;
 	private String baseUrl;
 
 	@BeforeTest
@@ -29,7 +28,6 @@ public class deleteCustomer extends commonFunctions {
 		options.addArguments("start-maximized");
 		driver = new ChromeDriver(options);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
-		jse = (JavascriptExecutor) driver;
 		baseUrl = "https://opensource-demo.orangehrmlive.com";
 		commonFunctions.toLogin(driver, baseUrl);
 	}
