@@ -28,70 +28,62 @@ public class deleteCustomer extends commonFunctions {
 		options = new ChromeOptions();
 		options.addArguments("start-maximized");
 		driver = new ChromeDriver(options);
+		wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		jse = (JavascriptExecutor) driver;
-		baseUrl = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+		baseUrl = "https://opensource-demo.orangehrmlive.com";
 		commonFunctions.toLogin(driver, baseUrl);
 	}
 
 	@Test
 	public void TC_OHRM_DC_01() throws Exception {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		String expectedResult = "Successfully Deleted";
 		String customerName = "Van Lang University - Group 1";
 		String customerDescription = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName, customerDescription);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName, customerDescription);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
-		jse.executeScript("window.scrollBy(0,200)");
-		// Thread.sleep(5000);
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		// Thread.sleep(1000);
 		WebElement deleteButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']"));
 		deleteButton.click();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_02() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName = "Van Lang University - Group 1";
 		String customerDescription = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName, customerDescription);
-		Thread.sleep(10000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName, customerDescription);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement checkBox = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/parent::div/child::div[1]//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']"));
 		checkBox.click();
-		Thread.sleep(1000);
-		jse.executeScript("window.scrollBy(0,-200)");
-		Thread.sleep(1000);
 		WebElement deleteSelectedButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-horizontal-margin']"));
 		deleteSelectedButton.click();
-		Thread.sleep(1000);
 		WebElement deleteButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']"));
 		deleteButton.click();
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
-		jse.executeScript("window.scrollBy(0,200)");
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_03() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName1 = "Van Lang University - Group 1 - 01";
@@ -99,35 +91,29 @@ public class deleteCustomer extends commonFunctions {
 		String customerName2 = "Van Lang University - Group 1 - 02";
 		String customerDescription2 = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName1, customerDescription1);
-		Thread.sleep(7000);
-		commonFunctions.toAddDemoCustomer(driver, customerName2, customerDescription2);
-		Thread.sleep(10000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName1, customerDescription1);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName2, customerDescription2);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement multipleCheckBox = driver.findElement(By.xpath(
 				"//div[text()='Name']/parent::div/child::div[1]//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']"));
 		multipleCheckBox.click();
-		Thread.sleep(1000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
-		jse.executeScript("window.scrollBy(0,-200)");
-		Thread.sleep(1000);
 		WebElement deleteSelectedButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-horizontal-margin']"));
 		deleteSelectedButton.click();
-		Thread.sleep(1000);
 		WebElement deleteButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']"));
 		deleteButton.click();
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
-		jse.executeScript("window.scrollBy(0,200)");
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_04() throws Exception {
 		String expectedResult = "Successfully Deleted";
 		String customerName1 = "Van Lang University - Group 1 - 01";
@@ -135,66 +121,59 @@ public class deleteCustomer extends commonFunctions {
 		String customerName2 = "Van Lang University - Group 1 - 02";
 		String customerDescription2 = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName1, customerDescription1);
-		Thread.sleep(7000);
-		commonFunctions.toAddDemoCustomer(driver, customerName2, customerDescription2);
-		Thread.sleep(10000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName1, customerDescription1);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName2, customerDescription2);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement multipleCheckBox = driver.findElement(By.xpath(
 				"//div[text()='Name']/parent::div/child::div[1]//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']"));
 		multipleCheckBox.click();
-		Thread.sleep(1000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='"
 				+ customerName1 + "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		Thread.sleep(1000);
 		WebElement deleteButton = driver.findElement(By.xpath(
 				"//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']"));
 		deleteButton.click();
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_05() throws Exception {
 		String expectedResult = "Not allowed to delete customer(s) associated with projects that have time logged against them";
 		String customerName = "The Coca-Cola Company";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		Thread.sleep(5000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(
+				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")));
 		WebElement toastResult = driver.findElement(
 				By.xpath("//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']"));
 		String actualResult = toastResult.getText();
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_06() throws Exception {
 		Boolean expectedResult = true;
 		Boolean actualResult = false;
 		String customerName = "Van Lang University - Group 1 - 03";
 		String customerDescription = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName, customerDescription);
-		Thread.sleep(10000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName, customerDescription);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		Thread.sleep(1000);
 		WebElement cancelButton = driver.findElement(
 				By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--text orangehrm-button-margin']"));
 		cancelButton.click();
@@ -206,22 +185,19 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC_OHRM_DC_07() throws Exception {
 		Boolean expectedResult = true;
 		Boolean actualResult = false;
 		String customerName = "Van Lang University - Group 1 - 04";
 		String customerDescription = "Automation Test";
 		commonFunctions.toSelectModule(driver, "Time");
-		commonFunctions.toSelectSection(driver, "Project Info", true, "Customers");
-		commonFunctions.toAddDemoCustomer(driver, customerName, customerDescription);
-		Thread.sleep(10000);
-		jse.executeScript("window.scrollBy(0,200)");
-		Thread.sleep(1000);
+		commonFunctions.toSelectSection(driver, wait, "Project Info", true, "Customers");
+		commonFunctions.toAddDemoCustomer(driver, wait, customerName, customerDescription);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h6[text()='Customers']")));
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
-		Thread.sleep(1000);
 		WebElement xButton = driver
 				.findElement(By.xpath("//button[@class='oxd-dialog-close-button oxd-dialog-close-button-position']"));
 		xButton.click();
@@ -233,7 +209,7 @@ public class deleteCustomer extends commonFunctions {
 		Assert.assertEquals(actualResult, expectedResult);
 	}
 
-	@AfterTest(enabled = false)
+	@AfterTest
 	public void afterTest() throws Exception {
 		driver.close();
 	}
