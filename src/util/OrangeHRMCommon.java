@@ -3,6 +3,7 @@ package util;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -83,5 +84,14 @@ public class OrangeHRMCommon {
 				break;
 			}
 		}
+	}
+
+	// Toast
+	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
+	WebElement toastResult;
+
+	public String getToastResult() {
+		wait.until(ExpectedConditions.visibilityOf(toastResult));
+		return toastResult.getText();
 	}
 }

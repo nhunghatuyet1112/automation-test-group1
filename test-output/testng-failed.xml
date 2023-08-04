@@ -5,7 +5,7 @@
     <classes>
       <class name="test.TestOrangeHRMCustomer">
         <methods>
-          <include name="test"/>
+          <include name="TC_OHRM_DC_06"/>
           <include name="beforeMethod"/>
           <include name="beforeTest"/>
         </methods>
