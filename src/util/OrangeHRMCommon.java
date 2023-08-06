@@ -120,22 +120,11 @@ public class OrangeHRMCommon {
 		}
 		Assert.assertTrue(isPassed);
 	}
-	
+
 	public void writeResult(String path, String sheetName, int rowResult, int colResult) throws Exception {
-		ExcelUtil.openFile(path, sheetName);
-		int countTested = 0;
-		int rowTestCase = ExcelUtil.getRowCount(path, sheetName) - 1;
-		int colTestCase = ExcelUtil.getCellCount(path, sheetName, 1) - 1;
-		for (int i = 1; i <= rowTestCase; i++) {
-			if (!ExcelUtil.getCellData(i, colTestCase).equals("")) {
-				countTested += 1;
-			}
-		}
-		if (countTested == rowTestCase) {
-			String testResultMessage = String.valueOf(testResult(path, sheetName)) + "/"
-					+ (ExcelUtil.getRowCount(path, sheetName) - 1);
-			ExcelUtil.setCellDataResult(rowResult, colResult, testResultMessage);
-		}
+		String testResultMessage = String.valueOf(testResult(path, sheetName)) + "/"
+				+ (ExcelUtil.getRowCount(path, sheetName) - 1);
+		ExcelUtil.setCellDataResult(rowResult, colResult, testResultMessage);
 		ExcelUtil.saveAndCloseFile(path);
 	}
 }

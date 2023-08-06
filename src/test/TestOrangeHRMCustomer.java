@@ -17,7 +17,7 @@ public class TestOrangeHRMCustomer {
 	OrangeHRMCommon objCommon;
 	OrangeHRMCustomer objCustomer;
 
-	@BeforeTest
+	@BeforeTest(groups = { "delete-customer" })
 	public void beforeTest() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -27,14 +27,14 @@ public class TestOrangeHRMCustomer {
 		objCustomer = new OrangeHRMCustomer(driver);
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups = { "delete-customer" })
 	public void beforeMethod() {
 		objCommon.selectModule("Time");
 		objCommon.selectSection("Project Info");
 		objCommon.selectChildSection("Customers");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_01() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(1, 2), ExcelUtil.getCellData(1, 4));
@@ -49,7 +49,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_02() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(2, 2), ExcelUtil.getCellData(2, 4));
@@ -65,7 +65,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_03() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(3, 2), ExcelUtil.getCellData(3, 4));
@@ -82,7 +82,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_04() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(4, 2), ExcelUtil.getCellData(4, 4));
@@ -99,7 +99,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_05() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.clickTrashIcon(ExcelUtil.getCellData(5, 2));
@@ -112,7 +112,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_06() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(6, 2), ExcelUtil.getCellData(6, 4));
@@ -127,7 +127,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test
+	@Test(groups = { "delete-customer" })
 	public void TC_OHRM_DC_07() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
 		objCustomer.addCustomer(ExcelUtil.getCellData(7, 2), ExcelUtil.getCellData(7, 4));
@@ -142,7 +142,7 @@ public class TestOrangeHRMCustomer {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@AfterTest
+	@AfterTest(groups = { "delete-customer" })
 	public void afterTest() throws Exception {
 		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "DeleteCustomer", 8, 7);
 		driver.close();
