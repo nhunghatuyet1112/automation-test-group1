@@ -41,72 +41,110 @@ public class TestOrangeHRMCustomer {
 		objCustomer.clickTrashIcon(ExcelUtil.getCellData(1, 2));
 		objCustomer.clickDeleteBtn();
 		ExcelUtil.setCellData(1, 6, objCommon.getToastResult());
-		if(objCommon.getToastResult().equals(ExcelUtil.getCellData(1, 5))) {
-			Assert.assertTrue(true);
-			ExcelUtil.setCellData(1, 7, "PASSED");
-			ExcelUtil.fillGreenColour(1, 7);
+		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(1, 5))) {
+			objCommon.testCompleted(1, 7, true, "PASSED");
 		} else {
-			Assert.assertTrue(false);
-			ExcelUtil.setCellData(1, 7, "FAILED");
-			ExcelUtil.fillRedColour(1, 7);
+			objCommon.testCompleted(1, 7, false, "FAILED");
 		}
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_02() {
-		objCustomer.addCustomer("Van Lang University - Group 1", "Automation Test");
-		objCustomer.clickCheckBox("Van Lang University - Group 1");
+	@Test
+	public void TC_OHRM_DC_02() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.addCustomer(ExcelUtil.getCellData(2, 2), ExcelUtil.getCellData(2, 4));
+		objCustomer.clickCheckBox(ExcelUtil.getCellData(2, 2));
 		objCustomer.clickDeleteSelectedBtn();
 		objCustomer.clickDeleteBtn();
-		Assert.assertTrue(objCommon.getToastResult().equals("Successfully Deleted"));
+		ExcelUtil.setCellData(2, 6, objCommon.getToastResult());
+		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(2, 5))) {
+			objCommon.testCompleted(2, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(2, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_03() {
-		objCustomer.addCustomer("Van Lang University - Group 1 - 01", "Automation Test");
-		objCustomer.addCustomer("Van Lang University - Group 1 - 02", "Automation Test");
+	@Test
+	public void TC_OHRM_DC_03() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.addCustomer(ExcelUtil.getCellData(3, 2), ExcelUtil.getCellData(3, 4));
+		objCustomer.addCustomer(ExcelUtil.getCellData(3, 3), ExcelUtil.getCellData(3, 4));
 		objCustomer.clickMultipleCheckBoxBtn();
 		objCustomer.clickDeleteSelectedBtn();
 		objCustomer.clickDeleteBtn();
-		Assert.assertTrue(objCommon.getToastResult().equals("Successfully Deleted"));
+		ExcelUtil.setCellData(3, 6, objCommon.getToastResult());
+		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(3, 5))) {
+			objCommon.testCompleted(3, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(3, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_04() {
-		objCustomer.addCustomer("Van Lang University - Group 1 - 01", "Automation Test");
-		objCustomer.addCustomer("Van Lang University - Group 1 - 02", "Automation Test");
+	@Test
+	public void TC_OHRM_DC_04() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.addCustomer(ExcelUtil.getCellData(4, 2), ExcelUtil.getCellData(4, 4));
+		objCustomer.addCustomer(ExcelUtil.getCellData(4, 3), ExcelUtil.getCellData(4, 4));
 		objCustomer.clickMultipleCheckBoxBtn();
-		objCustomer.clickTrashIcon("Van Lang University - Group 1 - 01");
+		objCustomer.clickTrashIcon(ExcelUtil.getCellData(4, 2));
 		objCustomer.clickDeleteBtn();
-		Assert.assertTrue(objCommon.getToastResult().equals("Successfully Deleted"));
+		ExcelUtil.setCellData(4, 6, objCommon.getToastResult());
+		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(4, 5))) {
+			objCommon.testCompleted(4, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(4, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_05() {
-		objCustomer.clickTrashIcon("The Coca-Cola Company");
-		Assert.assertTrue(objCommon.getToastResult().equals(
-				"Not allowed to delete customer(s) associated with projects that have time logged against them"));
+	@Test
+	public void TC_OHRM_DC_05() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.clickTrashIcon(ExcelUtil.getCellData(5, 2));
+		ExcelUtil.setCellData(5, 6, objCommon.getToastResult());
+		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(5, 5))) {
+			objCommon.testCompleted(5, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(5, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_06() {
-		objCustomer.addCustomer("Van Lang University - Group 1 - 03", "Automation Test");
-		objCustomer.clickTrashIcon("Van Lang University - Group 1 - 03");
+	@Test
+	public void TC_OHRM_DC_06() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.addCustomer(ExcelUtil.getCellData(6, 2), ExcelUtil.getCellData(6, 4));
+		objCustomer.clickTrashIcon(ExcelUtil.getCellData(6, 2));
 		objCustomer.clickCancelBtn();
-		Assert.assertEquals(objCustomer.checkExistCustomerName("Van Lang University - Group 1 - 03"), true);
+		ExcelUtil.setCellData(6, 6, objCustomer.checkExistCustomerName(ExcelUtil.getCellData(6, 2)));
+		if (objCustomer.checkExistCustomerName(ExcelUtil.getCellData(6, 2)).equals(ExcelUtil.getCellData(6, 5))) {
+			objCommon.testCompleted(6, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(6, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@Test(enabled=false)
-	public void TC_OHRM_DC_07() {
-		objCustomer.addCustomer("Van Lang University - Group 1 - 04", "Automation Test");
-		objCustomer.clickTrashIcon("Van Lang University - Group 1 - 04");
+	@Test
+	public void TC_OHRM_DC_07() throws Exception {
+		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "DeleteCustomer");
+		objCustomer.addCustomer(ExcelUtil.getCellData(7, 2), ExcelUtil.getCellData(7, 4));
+		objCustomer.clickTrashIcon(ExcelUtil.getCellData(7, 2));
 		objCustomer.clickXBtn();
-		Assert.assertEquals(objCustomer.checkExistCustomerName("Van Lang University - Group 1 - 04"), true);
+		ExcelUtil.setCellData(7, 6, objCustomer.checkExistCustomerName(ExcelUtil.getCellData(7, 2)));
+		if (objCustomer.checkExistCustomerName(ExcelUtil.getCellData(7, 2)).equals(ExcelUtil.getCellData(7, 5))) {
+			objCommon.testCompleted(7, 7, true, "PASSED");
+		} else {
+			objCommon.testCompleted(7, 7, false, "FAILED");
+		}
+		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-	@AfterTest(enabled=false)
+	@AfterTest
 	public void afterTest() throws Exception {
+		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "DeleteCustomer", 8, 7);
 		driver.close();
 	}
 }

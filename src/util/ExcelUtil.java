@@ -6,6 +6,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 
 import org.apache.log4j.Logger;
+import org.apache.poi.hssf.usermodel.HSSFCellStyle;
+import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -76,7 +78,6 @@ public class ExcelUtil {
 		cellCount = row.getLastCellNum();
 		fi.close();
 		return cellCount;
-
 	}
 
 	public static String getCellData(int rowNum, int colNum) throws Exception {
@@ -125,9 +126,31 @@ public class ExcelUtil {
 			}
 			cell.setCellValue(status);
 			font = wb.createFont();
-			font.setFontName("Times New Roman");
-			font.setFontHeightInPoints((short) 13);
+			setCommonFont(false, 12);
 			style = wb.createCellStyle();
+			setCommonStyle();
+			style.setFont(font);
+			cell.setCellStyle(style);
+		} catch (Exception e) {
+			return;
+		}
+	}
+
+	public static void setCellDataResult(int rowNum, int colNum, String status) throws Exception {
+		try {
+			row = ws.getRow(rowNum);
+			if (row == null) {
+				row = ws.createRow(rowNum);
+			}
+			cell = row.getCell(colNum);
+			if (cell == null) {
+				cell = row.createCell(colNum);
+			}
+			cell.setCellValue(status);
+			font = wb.createFont();
+			setCommonFont(true, 13);
+			style = wb.createCellStyle();
+			setCommonStyle();
 			style.setFont(font);
 			cell.setCellStyle(style);
 		} catch (Exception e) {
@@ -139,12 +162,11 @@ public class ExcelUtil {
 		row = ws.getRow(rowNum);
 		cell = row.getCell(colNum);
 		font = wb.createFont();
-		font.setFontName("Times New Roman");
-		font.setBold(true);
-		font.setFontHeightInPoints((short) 13);
+		setCommonFont(true, 13);
 		style = wb.createCellStyle();
 		style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
 		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+		setCommonStyle();
 		style.setFont(font);
 		cell.setCellStyle(style);
 	}
@@ -153,14 +175,28 @@ public class ExcelUtil {
 		row = ws.getRow(rowNum);
 		cell = row.getCell(colNum);
 		font = wb.createFont();
-		font.setFontName("Times New Roman");
-		font.setBold(true);
-		font.setFontHeightInPoints((short) 13);
+		setCommonFont(true, 13);
 		style = wb.createCellStyle();
 		style.setFillForegroundColor(IndexedColors.RED.getIndex());
 		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+		setCommonStyle();
 		style.setFont(font);
 		cell.setCellStyle(style);
 	}
 
+	public static void setCommonStyle() throws Exception {
+		style.setAlignment(CellStyle.ALIGN_CENTER);
+		style.setVerticalAlignment(CellStyle.VERTICAL_CENTER);
+		style.setBorderTop(HSSFCellStyle.BORDER_THIN);
+		style.setBorderBottom(HSSFCellStyle.BORDER_THIN);
+		style.setBorderLeft(HSSFCellStyle.BORDER_THIN);
+		style.setBorderRight(HSSFCellStyle.BORDER_THIN);
+		style.setWrapText(true);
+	}
+
+	public static void setCommonFont(boolean isBool, int fontSize) throws Exception {
+		font.setFontName("Times New Roman");
+		font.setBold(isBool);
+		font.setFontHeightInPoints((short) fontSize);
+	}
 }

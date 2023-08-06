@@ -61,12 +61,14 @@ public class OrangeHRMCustomer {
 	}
 
 	public void clickTrashIcon(String customerName) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-trash']"));
 		trashIcon.click();
 	}
 
 	public void clickCheckBox(String customerName) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement checkBox = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
 				+ "']/parent::div/parent::div/child::div[1]//i[@class='oxd-icon bi-check oxd-checkbox-input-icon']"));
 		checkBox.click();
@@ -96,12 +98,13 @@ public class OrangeHRMCustomer {
 		multipleCheckBoxBtn.click();
 	}
 	
-	public boolean checkExistCustomerName(String customerName) {
+	public String checkExistCustomerName(String customerName) {
 		wait.until(ExpectedConditions.visibilityOfAllElements(customerNames));
-		boolean isExist = false;
+		String isExist = "";
 		for(int i = 0; i < customerNames.size(); i++) {
 			if(customerNames.get(i).getText().equals(customerName)) {
-				isExist = true;
+				isExist = "Exist on the table";
+				break;
 			}
 		}
 		return isExist;

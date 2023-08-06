@@ -3,6 +3,8 @@ package util;
 import java.time.Duration;
 import java.util.List;
 
+import javax.management.relation.RoleResult;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class OrangeHRMCommon {
 	WebDriver driver;
@@ -93,5 +96,46 @@ public class OrangeHRMCommon {
 	public String getToastResult() {
 		wait.until(ExpectedConditions.visibilityOf(toastResult));
 		return toastResult.getText();
+	}
+
+	// Assert and Excel
+	public int testResult(String path, String sheetName) throws Exception {
+		int countPassed = 0;
+		int rowTestCase = ExcelUtil.getRowCount(path, sheetName) - 1;
+		int colResult = ExcelUtil.getCellCount(path, sheetName, 1) - 1;
+		for (int i = 1; i <= rowTestCase; i++) {
+			if (ExcelUtil.getCellData(i, colResult).equals("PASSED")) {
+				countPassed += 1;
+			}
+		}
+		return countPassed;
+	}
+
+	public void testCompleted(int rolNum, int colNum, boolean isPassed, String message) throws Exception {
+		ExcelUtil.setCellData(rolNum, colNum, message);
+		if (isPassed) {
+			ExcelUtil.fillGreenColour(rolNum, colNum);
+		} else {
+			ExcelUtil.fillRedColour(rolNum, colNum);
+		}
+		Assert.assertTrue(isPassed);
+	}
+	
+	public void writeResult(String path, String sheetName, int rowResult, int colResult) throws Exception {
+		ExcelUtil.openFile(path, sheetName);
+		int countTested = 0;
+		int rowTestCase = ExcelUtil.getRowCount(path, sheetName) - 1;
+		int colTestCase = ExcelUtil.getCellCount(path, sheetName, 1) - 1;
+		for (int i = 1; i <= rowTestCase; i++) {
+			if (!ExcelUtil.getCellData(i, colTestCase).equals("")) {
+				countTested += 1;
+			}
+		}
+		if (countTested == rowTestCase) {
+			String testResultMessage = String.valueOf(testResult(path, sheetName)) + "/"
+					+ (ExcelUtil.getRowCount(path, sheetName) - 1);
+			ExcelUtil.setCellDataResult(rowResult, colResult, testResultMessage);
+		}
+		ExcelUtil.saveAndCloseFile(path);
 	}
 }
