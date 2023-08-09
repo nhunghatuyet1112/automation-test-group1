@@ -3,14 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TestOrangeHRMCustomer">
+      <class name="testcases.TestOrangeHRMCustomer">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
+          <include name="TC_OHRM_DC_02"/>
           <include name="beforeTest"/>
           <include name="TC_OHRM_DC_01"/>
+          <include name="afterTest"/>
+          <include name="TC_OHRM_DC_07"/>
+          <include name="TC_OHRM_DC_03"/>
+          <include name="TC_OHRM_DC_06"/>
+          <include name="TC_OHRM_DC_05"/>
+          <include name="beforeMethod"/>
+          <include name="TC_OHRM_DC_04"/>
         </methods>
-      </class> <!-- test.TestOrangeHRMCustomer -->
+      </class> <!-- testcases.TestOrangeHRMCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

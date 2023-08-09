@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<listeners>
+		<listener class-name="testcases.ListenerTest"></listener>
+	</listeners>
 	<test name="Test">
 		<groups>
 			<run>
@@ -10,7 +13,7 @@
 		</groups>
 
 		<classes>
-			<class name="test.TestOrangeHRMCustomer" />
+			<class name="testcases.TestOrangeHRMCustomer" />
 		</classes>
 	</test>
 </suite> 
