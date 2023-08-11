@@ -1,750 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="0" failed="0" skipped="7">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-08T22:52:26 ICT" name="Default suite" finished-at="2023-08-08T22:52:49 ICT" duration-ms="23681">
+  <suite started-at="2023-08-11T18:33:36 ICT" name="Suite" finished-at="2023-08-11T18:36:10 ICT" duration-ms="154085">
     <groups>
-      <group name="delete-customer">
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_01()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_01" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_02()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_02" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_03()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_03" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_04()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_04" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_05()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_05" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_06()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_06" class="testcases.TestOrangeHRMCustomer"/>
-        <method signature="TestOrangeHRMCustomer.TC_OHRM_DC_07()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" name="TC_OHRM_DC_07" class="testcases.TestOrangeHRMCustomer"/>
-      </group> <!-- delete-customer -->
+      <group name="edit-customer">
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_01()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_01" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_02()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_02" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_03()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_03" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_04()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_04" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_05()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_05" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_06()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_06" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_07()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_07" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_08()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_08" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_09()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_09" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_10()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_10" class="testcases.TestOrangeHRMCustomer"/>
+        <method signature="TestOrangeHRMCustomer.TC_OHRM_EC_11()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" name="TC_OHRM_EC_11" class="testcases.TestOrangeHRMCustomer"/>
+      </group> <!-- edit-customer -->
     </groups>
-    <test started-at="2023-08-08T22:52:26 ICT" name="Default test" finished-at="2023-08-08T22:52:49 ICT" duration-ms="23681">
+    <test started-at="2023-08-11T18:33:36 ICT" name="Test" finished-at="2023-08-11T18:36:10 ICT" duration-ms="154085">
       <class name="testcases.TestOrangeHRMCustomer">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:26 ICT" name="beforeTest" finished-at="2023-08-08T22:52:39 ICT" duration-ms="13289" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:33:36 ICT" name="beforeTest" finished-at="2023-08-11T18:34:07 ICT" duration-ms="30606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:39 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="10347" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:07 ICT" name="beforeMethod" finished-at="2023-08-11T18:34:09 ICT" duration-ms="2747" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_OHRM_DC_01()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_01" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="TC_OHRM_EC_01()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:09 ICT" name="TC_OHRM_EC_01" finished-at="2023-08-11T18:34:24 ICT" duration-ms="14823" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_01 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_OHRM_EC_01 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:24 ICT" name="beforeMethod" finished-at="2023-08-11T18:34:27 ICT" duration-ms="2766" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_OHRM_DC_02()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_02" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="TC_OHRM_EC_02()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:27 ICT" name="TC_OHRM_EC_02" finished-at="2023-08-11T18:34:36 ICT" duration-ms="8623" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_02 -->
-        <test-method signature="TC_OHRM_DC_03()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_03" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_03 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_OHRM_EC_02 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:36 ICT" name="beforeMethod" finished-at="2023-08-11T18:34:38 ICT" duration-ms="2197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="TC_OHRM_EC_03()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:38 ICT" name="TC_OHRM_EC_03" finished-at="2023-08-11T18:34:47 ICT" duration-ms="8764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EC_03 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:47 ICT" name="beforeMethod" finished-at="2023-08-11T18:34:49 ICT" duration-ms="2525" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_OHRM_DC_04()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_04" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="TC_OHRM_EC_04()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:49 ICT" name="TC_OHRM_EC_04" finished-at="2023-08-11T18:34:58 ICT" duration-ms="8687" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_04 -->
-        <test-method signature="TC_OHRM_DC_05()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_05" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_05 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_OHRM_EC_04 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:34:58 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:00 ICT" duration-ms="2646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_OHRM_DC_06()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_06" finished-at="2023-08-08T22:52:49 ICT" duration-ms="1" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="TC_OHRM_EC_05()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:00 ICT" name="TC_OHRM_EC_05" finished-at="2023-08-11T18:35:09 ICT" duration-ms="8940" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_06 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_OHRM_EC_05 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:09 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:12 ICT" duration-ms="2852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="TC_OHRM_DC_07()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="TC_OHRM_DC_07" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=115.0.5790.111)
-Build info: version: '4.10.0', revision: 'c14d967899'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4765bd01191dea3588afee8a0979fa15, findElements {using=xpath, value=//li[@class="oxd-main-menu-item-wrapper"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.111, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:65363}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65363/devtoo..., se:cdpVersion: 115.0.5790.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4765bd01191dea3588afee8a0979fa15
-at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
-at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:363)
-at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:83)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:36)
-at jdk.proxy2/jdk.proxy2.$Proxy20.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.ExpectedConditions$9.toString(ExpectedConditions.java:273)
-at java.base/java.lang.String.valueOf(String.java:4216)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:227)
-at util.OrangeHRMCommon.selectModule(OrangeHRMCommon.java:63)
-at testcases.TestOrangeHRMCustomer.beforeMethod(TestOrangeHRMCustomer.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="TC_OHRM_EC_06()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:12 ICT" name="TC_OHRM_EC_06" finished-at="2023-08-11T18:35:20 ICT" duration-ms="7329" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_OHRM_DC_07 -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="beforeMethod" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        </test-method> <!-- TC_OHRM_EC_06 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:20 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:22 ICT" duration-ms="2623" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testcases.TestOrangeHRMCustomer@8519cb4]" started-at="2023-08-08T22:52:49 ICT" name="afterTest" finished-at="2023-08-08T22:52:49 ICT" duration-ms="0" status="SKIP">
+        <test-method signature="TC_OHRM_EC_07()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:22 ICT" name="TC_OHRM_EC_07" finished-at="2023-08-11T18:35:29 ICT" duration-ms="7336" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- TC_OHRM_EC_07 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:29 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:32 ICT" duration-ms="2561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EC_08()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:32 ICT" name="TC_OHRM_EC_08" finished-at="2023-08-11T18:35:39 ICT" duration-ms="7267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EC_08 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:39 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:42 ICT" duration-ms="2569" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EC_09()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:42 ICT" name="TC_OHRM_EC_09" finished-at="2023-08-11T18:35:49 ICT" duration-ms="7319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EC_09 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:49 ICT" name="beforeMethod" finished-at="2023-08-11T18:35:52 ICT" duration-ms="2500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EC_10()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:52 ICT" name="TC_OHRM_EC_10" finished-at="2023-08-11T18:35:59 ICT" duration-ms="7677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EC_10 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:35:59 ICT" name="beforeMethod" finished-at="2023-08-11T18:36:02 ICT" duration-ms="2948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EC_11()[pri:0, instance:testcases.TestOrangeHRMCustomer@5032714f]" started-at="2023-08-11T18:36:02 ICT" name="TC_OHRM_EC_11" finished-at="2023-08-11T18:36:10 ICT" duration-ms="7730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EC_11 -->
       </class> <!-- testcases.TestOrangeHRMCustomer -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

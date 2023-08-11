@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.util.List;
 
 import javax.management.relation.RoleResult;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +16,7 @@ import org.testng.Assert;
 public class OrangeHRMCommon {
 	WebDriver driver;
 	WebDriverWait wait;
-
+	
 	public OrangeHRMCommon(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -87,6 +86,21 @@ public class OrangeHRMCommon {
 				break;
 			}
 		}
+	}
+	
+	public String getCurrentUrl() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		String url = driver.getCurrentUrl();
+		return url;
+	}
+	
+	// Required
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+	WebElement requiredText;
+	
+	public String getRequiredText() {
+		wait.until(ExpectedConditions.visibilityOf(requiredText));
+		return requiredText.getText();
 	}
 
 	// Toast

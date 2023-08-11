@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,8 @@ public class OrangeHRMCustomer {
 	WebElement addBtn;
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement saveBtn;
+	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--ghost']")
+	WebElement cancelEditBtn;
 	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']")
 	WebElement deleteBtn;
 	@FindBy(xpath = "//button[@class='oxd-button oxd-button--medium oxd-button--text orangehrm-button-margin']")
@@ -58,6 +61,32 @@ public class OrangeHRMCustomer {
 		customerNameOrangeHRM.sendKeys(customerName);
 		customerDescriptionOrangeHRM.sendKeys(customerDescription);
 		saveBtn.click();
+	}
+	
+	public void editCustomer(String customerName, String customerDescription, boolean isCancel) throws InterruptedException {
+		wait.until(ExpectedConditions.visibilityOf(saveBtn));
+		customerNameOrangeHRM.click();
+		customerNameOrangeHRM.sendKeys(Keys.CONTROL,"a", Keys.BACK_SPACE);
+		customerNameOrangeHRM.sendKeys(customerName);
+		Thread.sleep(2000);
+		customerDescriptionOrangeHRM.sendKeys(Keys.CONTROL,"a", Keys.BACK_SPACE);
+		customerDescriptionOrangeHRM.sendKeys(customerDescription);
+		if (isCancel) {
+			Thread.sleep(1000);
+			cancelEditBtn.click();
+		} else {
+			Thread.sleep(1000);
+			saveBtn.click();
+		}
+			
+	}
+	
+	public void clickPencilIcon(String customerName) throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		WebElement pencilIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName
+				+ "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-pencil-fill']"));
+		Thread.sleep(2000);
+		pencilIcon.click();
 	}
 
 	public void clickTrashIcon(String customerName) {

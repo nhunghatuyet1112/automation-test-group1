@@ -7,8 +7,8 @@
 	<test name="Test">
 		<groups>
 			<run>
-				<!-- <include name="edit-customer"></include> -->
-				<include name="delete-customer"></include>
+				<include name="edit-customer"></include>
+				<!-- <include name="delete-customer"></include> -->
 			</run>
 		</groups>
 
