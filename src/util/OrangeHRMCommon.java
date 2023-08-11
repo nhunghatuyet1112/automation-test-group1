@@ -111,6 +111,27 @@ public class OrangeHRMCommon {
 		wait.until(ExpectedConditions.visibilityOf(toastResult));
 		return toastResult.getText();
 	}
+	
+	// Report
+	@FindBy(xpath = "//div[@class='orangehrm-paper-container']")
+	WebElement reportTable;
+	@FindBy(xpath = "//div[@class='orangehrm-paper-container']//span[@class='oxd-text oxd-text--span oxd-text--count']")
+	WebElement noReportsFound;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Project Name']")
+	WebElement projectNameCol;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Activity Name']")
+	WebElement activityNameCol;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Time (Hours)']")
+	WebElement timeCol;
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-text--footer']")
+	WebElement totalDuration;
+	
+	public String getTableResult() {
+		wait.until(ExpectedConditions.visibilityOf(reportTable));
+		String result = noReportsFound.getText() + ", " + projectNameCol.getText() + ", "
+						+ activityNameCol.getText() + ", " + timeCol.getText() + ", " + totalDuration.getText();
+		return result;
+	}
 
 	// Assert and Excel
 	public int testResult(String path, String sheetName) throws Exception {

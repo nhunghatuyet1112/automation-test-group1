@@ -21,7 +21,7 @@ public class TestOrangeHRMCustomer {
 	OrangeHRMCommon objCommon;
 	OrangeHRMCustomer objCustomer;
 
-	@BeforeTest(groups = { "edit-customer" })
+	@BeforeTest(groups = { "delete-customer", "edit-customer" })
 	public void beforeTest() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -31,7 +31,7 @@ public class TestOrangeHRMCustomer {
 		objCustomer = new OrangeHRMCustomer(driver);
 	}
 
-	@BeforeMethod(groups = { "edit-customer" })
+	@BeforeMethod(groups = { "delete-customer", "edit-customer" })
 	public void beforeMethod() {
 		objCommon.selectModule("Time");
 		objCommon.selectSection("Project Info");
@@ -304,6 +304,12 @@ public class TestOrangeHRMCustomer {
 	@AfterTest(groups = { "delete-customer" })
 	public void afterTest() throws Exception {
 		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "DeleteCustomer", 8, 7);
+		driver.close();
+	}
+	
+	@AfterTest(groups = { "edit-customer" })
+	public void afterTestEditCustomer() throws Exception {
+		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "EditCustomer", 12, 7);
 		driver.close();
 	}
 }
