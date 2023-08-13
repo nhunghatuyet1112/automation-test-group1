@@ -128,8 +128,7 @@ public class OrangeHRMCommon {
 	
 	public String getTableResult() {
 		wait.until(ExpectedConditions.visibilityOf(reportTable));
-		String result = noReportsFound.getText() + ", " + projectNameCol.getText() + ", "
-						+ activityNameCol.getText() + ", " + timeCol.getText() + ", " + totalDuration.getText();
+		String result = reportTable.getAttribute("class");
 		return result;
 	}
 

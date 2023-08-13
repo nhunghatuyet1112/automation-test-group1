@@ -52,7 +52,7 @@ public class OrangeHRMReports {
 	public void selectEmployee(String employeeName) throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(viewBtn));
 		employeeNameOrangeHRM.sendKeys(employeeName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(2000);
 		for(int i = 0; i < dropdownListOptions.size(); i++) {
 			if(dropdownListOptions.get(i).getText().contains(employeeName)) {
 				dropdownListOptions.get(i).click();
@@ -66,7 +66,7 @@ public class OrangeHRMReports {
 	public void selectProject(String projectName) throws InterruptedException {
 		wait.until(ExpectedConditions.visibilityOf(viewBtn));
 		projectNameOrangeHRM.sendKeys(projectName);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		Thread.sleep(2000);
 		for(int i = 0; i < dropdownListOptions.size(); i++) {
 			if(dropdownListOptions.get(i).getText().contains(projectName)) {
 				dropdownListOptions.get(i).click();
