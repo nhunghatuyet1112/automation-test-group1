@@ -24,11 +24,15 @@ public class TestOrangeHRMCustomer {
 	@BeforeTest(groups = { "delete-customer", "edit-customer" })
 	public void beforeTest() {
 		driver = new ChromeDriver();
+		Reporter.log("Browser Open");
 		driver.manage().window().maximize();
+		Reporter.log("Browser Maximized");
 		driver.get("https://opensource-demo.orangehrmlive.com");
+		Reporter.log("Application Started");
 		objCommon = new OrangeHRMCommon(driver);
 		objCommon.loginToOrangeHRM("Admin", "admin123");
 		objCustomer = new OrangeHRMCustomer(driver);
+		Reporter.log("Signing In");
 	}
 
 	@BeforeMethod(groups = { "delete-customer", "edit-customer" })
@@ -311,5 +315,6 @@ public class TestOrangeHRMCustomer {
 	public void afterTestEditCustomer() throws Exception {
 		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "EditCustomer", 12, 7);
 		driver.close();
+		Reporter.log("Browser Close");
 	}
 }
