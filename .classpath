@@ -101,6 +101,7 @@
 	<classpathentry kind="lib" path="C:/Users/user/Downloads/poi-3.10-FINAL/ooxml-lib/dom4j-1.6.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/user/Downloads/poi-3.10-FINAL/ooxml-lib/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/user/Downloads/poi-3.10-FINAL/ooxml-lib/xmlbeans-2.3.0.jar"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/selenium-java-4.10.0/selenium-api-4.10.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/selenium-java-4.10.0/selenium-api-4.10.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/selenium-java-4.10.0/selenium-chrome-driver-4.10.0.jar"/>
@@ -195,5 +196,7 @@
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/poi-3.10-FINAL/lib/log4j-1.2.13.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/poi-3.10-FINAL/lib/commons-codec-1.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/ASUS/Downloads/poi-3.10-FINAL/lib/commons-logging-1.1.jar"/>
+=======
+>>>>>>> 182573d16e064f755700b108b0f9acb0707cf102
 	<classpathentry kind="output" path="bin"/>
 </classpath>
