@@ -89,33 +89,6 @@ public class OrangeHRMCustomer {
 		pencilIcon.click();
 	}
 
-	public void editCustomer(String customerName, String customerDescription, boolean isCancel)
-			throws InterruptedException {
-		wait.until(ExpectedConditions.visibilityOf(saveBtn));
-		customerNameOrangeHRM.click();
-		customerNameOrangeHRM.sendKeys(Keys.CONTROL, "a", Keys.BACK_SPACE);
-		customerNameOrangeHRM.sendKeys(customerName);
-		Thread.sleep(2000);
-		customerDescriptionOrangeHRM.sendKeys(Keys.CONTROL, "a", Keys.BACK_SPACE);
-		customerDescriptionOrangeHRM.sendKeys(customerDescription);
-		if (isCancel) {
-			Thread.sleep(1000);
-			cancelEditBtn.click();
-		} else {
-			Thread.sleep(1000);
-			saveBtn.click();
-		}
-
-	}
-
-	public void clickPencilIcon(String customerName) throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		WebElement pencilIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='"
-				+ customerName + "']/parent::div/following-sibling::div[2]//i[@class='oxd-icon bi-pencil-fill']"));
-		Thread.sleep(2000);
-		pencilIcon.click();
-	}
-
 	public void clickTrashIcon(String customerName) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		WebElement trashIcon = driver.findElement(By.xpath("//div[@class='oxd-table-body']//div[text()='" + customerName

@@ -16,11 +16,8 @@ public class TestOrangeHRMProject {
 	OrangeHRMCommon objCommon;
 	OrangeHRMProject objProject;
 
-<<<<<<< HEAD
+
 	@BeforeTest(groups = { "add-project" })
-=======
-	@BeforeTest
->>>>>>> master
 	public void beforeTest() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -30,22 +27,16 @@ public class TestOrangeHRMProject {
 		objProject = new OrangeHRMProject(driver);
 	}
 
-<<<<<<< HEAD
+
 	@BeforeMethod(groups = { "add-project" })
-=======
-	@BeforeMethod
->>>>>>> master
 	public void beforeMethod() {
 		objCommon.selectModule("Time");
 		objCommon.selectSection("Project Info");
 		objCommon.selectChildSection("Projects");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_01() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -57,11 +48,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_02() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -73,11 +61,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_03() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -89,11 +74,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_04() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -105,11 +87,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_05() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -121,11 +100,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_06() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -137,11 +113,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_07() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -153,11 +126,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_08() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -168,11 +138,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_09() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -183,11 +150,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_10() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -199,11 +163,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_11() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -215,11 +176,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_12() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -231,11 +189,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@Test(groups = { "add-project" })
-=======
-	@Test
->>>>>>> master
 	public void TC_OHRM_AP_13() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
 		objProject.clickAddBtn();
@@ -247,11 +202,8 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-<<<<<<< HEAD
+
 	@AfterTest(groups = { "add-project" })
-=======
-	@AfterTest
->>>>>>> master
 	public void afterTest() throws Exception {
 		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "AddProject", 14, 8);
 		driver.close();

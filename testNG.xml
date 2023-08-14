@@ -7,24 +7,19 @@
 	<test name="Test">
 		<groups>
 			<run>
-<<<<<<< HEAD
 				<include name="add-project"></include>
-=======
 				<include name="employee-reports"></include>
->>>>>>> master
 				<!-- <include name="edit-customer"></include>  -->
 				<!-- <include name="delete-customer"></include> -->
 			</run>
 		</groups>
 
 		<classes>
-<<<<<<< HEAD
 			<class name="testcases.TestOrangeHRMCustomer" />
 			<class name="testcases.TestOrangeHRMProject" />
-=======
 			<class name="testcases.TestOrangeHRMReports"></class>
 			<class name="testcases.TestOrangeHRMCustomer" />
->>>>>>> master
+
 		</classes>
 	</test>
 </suite> 
