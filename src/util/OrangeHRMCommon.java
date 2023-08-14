@@ -4,7 +4,6 @@ import java.time.Duration;
 import java.util.List;
 
 import javax.management.relation.RoleResult;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -89,6 +88,21 @@ public class OrangeHRMCommon {
 		}
 	}
 
+	public String getCurrentUrl() {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		String url = driver.getCurrentUrl();
+		return url;
+	}
+
+	// Required
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+	WebElement requiredText;
+
+	public String getRequiredText() {
+		wait.until(ExpectedConditions.visibilityOf(requiredText));
+		return requiredText.getText();
+	}
+
 	// Toast
 	@FindBy(xpath = "//p[@class='oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text']")
 	WebElement toastResult;
@@ -97,6 +111,28 @@ public class OrangeHRMCommon {
 		wait.until(ExpectedConditions.visibilityOf(toastResult));
 		return toastResult.getText();
 	}
+
+	// Report
+	@FindBy(xpath = "//div[@class='orangehrm-paper-container']")
+	WebElement reportTable;
+	@FindBy(xpath = "//div[@class='orangehrm-paper-container']//span[@class='oxd-text oxd-text--span oxd-text--count']")
+	WebElement noReportsFound;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Project Name']")
+	WebElement projectNameCol;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Activity Name']")
+	WebElement activityNameCol;
+	@FindBy(xpath = "//div[@class='header-rgRow actual-rgRow']/child::div//descendant::div[text()='Time (Hours)']")
+	WebElement timeCol;
+	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-text--footer']")
+	WebElement totalDuration;
+
+//	public String getTableResult() {
+//		wait.until(ExpectedConditions.visibilityOf(reportTable));
+//		String result = noReportsFound.getText() + ", " + projectNameCol.getText() + ", " + activityNameCol.getText()
+//				+ ", " + timeCol.getText() + ", " + totalDuration.getText();
+//		String result = reportTable.getAttribute("class");
+//		return result;
+//	}
 
 	// Assert and Excel
 	public int testResult(String path, String sheetName) throws Exception {
@@ -119,6 +155,19 @@ public class OrangeHRMCommon {
 			ExcelUtil.fillRedColour(rolNum, colNum);
 		}
 		Assert.assertTrue(isPassed);
+	}
+
+	public void checkTestResult(int rowWrite, int colExpected, int colActual, int colResult) throws Exception {
+		if (ExcelUtil.getCellData(rowWrite, colExpected).equals(ExcelUtil.getCellData(rowWrite, colActual))) {
+			ExcelUtil.setCellData(rowWrite, colResult, "PASSED");
+			ExcelUtil.fillGreenColour(rowWrite, colResult);
+			Assert.assertTrue(true);
+		}
+		if (!ExcelUtil.getCellData(rowWrite, colExpected).equals(ExcelUtil.getCellData(rowWrite, colActual))) {
+			ExcelUtil.setCellData(rowWrite, colResult, "FAILED");
+			ExcelUtil.fillRedColour(rowWrite, colResult);
+			Assert.assertTrue(false);
+		}
 	}
 
 	public void writeResult(String path, String sheetName, int rowResult, int colResult) throws Exception {
