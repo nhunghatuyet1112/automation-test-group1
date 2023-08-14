@@ -16,7 +16,7 @@ import org.testng.Assert;
 public class OrangeHRMCommon {
 	WebDriver driver;
 	WebDriverWait wait;
-	
+
 	public OrangeHRMCommon(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -87,17 +87,17 @@ public class OrangeHRMCommon {
 			}
 		}
 	}
-	
+
 	public String getCurrentUrl() {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		String url = driver.getCurrentUrl();
 		return url;
 	}
-	
+
 	// Required
 	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
 	WebElement requiredText;
-	
+
 	public String getRequiredText() {
 		wait.until(ExpectedConditions.visibilityOf(requiredText));
 		return requiredText.getText();
@@ -111,7 +111,7 @@ public class OrangeHRMCommon {
 		wait.until(ExpectedConditions.visibilityOf(toastResult));
 		return toastResult.getText();
 	}
-	
+
 	// Report
 	@FindBy(xpath = "//div[@class='orangehrm-paper-container']")
 	WebElement reportTable;
@@ -125,7 +125,7 @@ public class OrangeHRMCommon {
 	WebElement timeCol;
 	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-text--footer']")
 	WebElement totalDuration;
-	
+
 	public String getTableResult() {
 		wait.until(ExpectedConditions.visibilityOf(reportTable));
 		String result = reportTable.getAttribute("class");
@@ -153,6 +153,19 @@ public class OrangeHRMCommon {
 			ExcelUtil.fillRedColour(rolNum, colNum);
 		}
 		Assert.assertTrue(isPassed);
+	}
+
+	public void checkTestResult(int rowWrite, int colExpected, int colActual, int colResult) throws Exception {
+		if (ExcelUtil.getCellData(rowWrite, colExpected).equals(ExcelUtil.getCellData(rowWrite, colActual))) {
+			ExcelUtil.setCellData(rowWrite, colResult, "PASSED");
+			ExcelUtil.fillGreenColour(rowWrite, colResult);
+			Assert.assertTrue(true);
+		}
+		if (!ExcelUtil.getCellData(rowWrite, colExpected).equals(ExcelUtil.getCellData(rowWrite, colActual))) {
+			ExcelUtil.setCellData(rowWrite, colResult, "FAILED");
+			ExcelUtil.fillRedColour(rowWrite, colResult);
+			Assert.assertTrue(false);
+		}
 	}
 
 	public void writeResult(String path, String sheetName, int rowResult, int colResult) throws Exception {
