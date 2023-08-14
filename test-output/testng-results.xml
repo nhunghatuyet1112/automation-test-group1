@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-13T23:42:56 ICT" name="Suite" finished-at="2023-08-13T23:45:04 ICT" duration-ms="127863">
+    <groups>
+      <group name="employee-reports">
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_01()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_01" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_02()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_02" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_03()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_03" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_04()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_04" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_05()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_05" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_06()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_06" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_07()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_07" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_08()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_08" class="testcases.TestOrangeHRMReports"/>
+        <method signature="TestOrangeHRMReports.TC_OHRM_EP_09()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" name="TC_OHRM_EP_09" class="testcases.TestOrangeHRMReports"/>
+      </group> <!-- employee-reports -->
+    </groups>
+    <test started-at="2023-08-13T23:42:56 ICT" name="Test" finished-at="2023-08-13T23:45:04 ICT" duration-ms="127863">
+      <class name="testcases.TestOrangeHRMReports">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:42:56 ICT" name="beforeTest" finished-at="2023-08-13T23:43:14 ICT" duration-ms="18092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:14 ICT" name="beforeMethod" finished-at="2023-08-13T23:43:17 ICT" duration-ms="2964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_01()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:17 ICT" name="TC_OHRM_EP_01" finished-at="2023-08-13T23:43:21 ICT" duration-ms="3470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_01 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:21 ICT" name="beforeMethod" finished-at="2023-08-13T23:43:23 ICT" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_02()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:23 ICT" name="TC_OHRM_EP_02" finished-at="2023-08-13T23:43:29 ICT" duration-ms="5310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_02 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:29 ICT" name="beforeMethod" finished-at="2023-08-13T23:43:31 ICT" duration-ms="2606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_03()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:31 ICT" name="TC_OHRM_EP_03" finished-at="2023-08-13T23:43:47 ICT" duration-ms="15309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_03 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:47 ICT" name="beforeMethod" finished-at="2023-08-13T23:43:49 ICT" duration-ms="2095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_04()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:49 ICT" name="TC_OHRM_EP_04" finished-at="2023-08-13T23:43:55 ICT" duration-ms="6471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_04 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:55 ICT" name="beforeMethod" finished-at="2023-08-13T23:43:58 ICT" duration-ms="2597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_05()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:43:58 ICT" name="TC_OHRM_EP_05" finished-at="2023-08-13T23:44:14 ICT" duration-ms="16489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_05 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:14 ICT" name="beforeMethod" finished-at="2023-08-13T23:44:16 ICT" duration-ms="2161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_06()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:16 ICT" name="TC_OHRM_EP_06" finished-at="2023-08-13T23:44:20 ICT" duration-ms="3171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_06 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:20 ICT" name="beforeMethod" finished-at="2023-08-13T23:44:22 ICT" duration-ms="2533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_07()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:22 ICT" name="TC_OHRM_EP_07" finished-at="2023-08-13T23:44:27 ICT" duration-ms="5206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_07 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:27 ICT" name="beforeMethod" finished-at="2023-08-13T23:44:29 ICT" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_08()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:29 ICT" name="TC_OHRM_EP_08" finished-at="2023-08-13T23:44:45 ICT" duration-ms="15394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_08 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:45 ICT" name="beforeMethod" finished-at="2023-08-13T23:44:47 ICT" duration-ms="2572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="TC_OHRM_EP_09()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:44:47 ICT" name="TC_OHRM_EP_09" finished-at="2023-08-13T23:45:04 ICT" duration-ms="16516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_OHRM_EP_09 -->
+        <test-method is-config="true" signature="afterTestEmployeeReports()[pri:0, instance:testcases.TestOrangeHRMReports@cecf639]" started-at="2023-08-13T23:45:04 ICT" name="afterTestEmployeeReports" finished-at="2023-08-13T23:45:04 ICT" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestEmployeeReports -->
+      </class> <!-- testcases.TestOrangeHRMReports -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

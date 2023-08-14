@@ -7,12 +7,14 @@
 	<test name="Test">
 		<groups>
 			<run>
-				<include name="edit-customer"></include>
+				<include name="employee-reports"></include>
+				<!-- <include name="edit-customer"></include>  -->
 				<!-- <include name="delete-customer"></include> -->
 			</run>
 		</groups>
 
 		<classes>
+			<class name="testcases.TestOrangeHRMReports"></class>
 			<class name="testcases.TestOrangeHRMCustomer" />
 		</classes>
 	</test>
