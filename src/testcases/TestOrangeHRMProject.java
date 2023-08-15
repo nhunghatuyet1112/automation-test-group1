@@ -16,7 +16,6 @@ public class TestOrangeHRMProject {
 	OrangeHRMCommon objCommon;
 	OrangeHRMProject objProject;
 
-
 	@BeforeTest(groups = { "add-project" })
 	public void beforeTest() {
 		driver = new ChromeDriver();
@@ -27,14 +26,12 @@ public class TestOrangeHRMProject {
 		objProject = new OrangeHRMProject(driver);
 	}
 
-
 	@BeforeMethod(groups = { "add-project" })
 	public void beforeMethod() {
 		objCommon.selectModule("Time");
 		objCommon.selectSection("Project Info");
 		objCommon.selectChildSection("Projects");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_01() throws Exception {
@@ -48,7 +45,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_02() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -60,7 +56,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(2, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_03() throws Exception {
@@ -74,7 +69,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_04() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -86,7 +80,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(4, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_05() throws Exception {
@@ -100,7 +93,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_06() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -112,7 +104,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(6, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_07() throws Exception {
@@ -126,7 +117,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_08() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -138,7 +128,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_09() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -149,7 +138,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(9, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_10() throws Exception {
@@ -163,7 +151,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_11() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -175,7 +162,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(11, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_12() throws Exception {
@@ -189,7 +175,6 @@ public class TestOrangeHRMProject {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
 
-
 	@Test(groups = { "add-project" })
 	public void TC_OHRM_AP_13() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "AddProject");
@@ -201,7 +186,6 @@ public class TestOrangeHRMProject {
 		objCommon.checkTestResult(13, 6, 7, 8);
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 	}
-
 
 	@AfterTest(groups = { "add-project" })
 	public void afterTest() throws Exception {

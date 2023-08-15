@@ -3,8 +3,6 @@ package util;
 import java.time.Duration;
 import java.util.List;
 
-import javax.management.relation.RoleResult;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -126,7 +124,6 @@ public class OrangeHRMCommon {
 	@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-text--footer']")
 	WebElement totalDuration;
 
-
 	public String getTableResult() {
 		wait.until(ExpectedConditions.visibilityOf(reportTable));
 //		String result = noReportsFound.getText() + ", " + projectNameCol.getText() + ", " + activityNameCol.getText()
@@ -134,7 +131,6 @@ public class OrangeHRMCommon {
 		String result = reportTable.getAttribute("class");
 		return result;
 	}
-
 
 	// Assert and Excel
 	public int testResult(String path, String sheetName) throws Exception {

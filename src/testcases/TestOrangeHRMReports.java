@@ -16,7 +16,7 @@ public class TestOrangeHRMReports {
 	WebDriver driver;
 	OrangeHRMCommon objCommon;
 	OrangeHRMReports objReports;
-	
+
 	@BeforeTest(groups = { "employee-reports" })
 	public void beforeTest() throws Exception {
 		driver = new ChromeDriver();
@@ -30,7 +30,7 @@ public class TestOrangeHRMReports {
 		objReports = new OrangeHRMReports(driver);
 		Reporter.log("Signing In");
 	}
-	
+
 	@BeforeMethod(groups = { "employee-reports" })
 	public void beforeMethod() throws Exception {
 		objCommon.selectModule("Time");
@@ -38,18 +38,18 @@ public class TestOrangeHRMReports {
 		objCommon.selectChildSection("Employee Reports");
 		Reporter.log("Selecting Section");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_01() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
 		Reporter.log("Open File");
-		objReports.selectEmployee(ExcelUtil.getCellData(1,2));
+		objReports.selectEmployee(ExcelUtil.getCellData(1, 2));
 		Reporter.log("Selecting Employee");
 		objReports.onlyApprovedTimesheets(false);
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(1, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(1, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(1, 9))) {
 			objCommon.testCompleted(1, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(1, 10, false, "FAILED");
@@ -58,7 +58,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_02() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -71,7 +71,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(2, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(2, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(2, 9))) {
 			objCommon.testCompleted(2, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(2, 10, false, "FAILED");
@@ -80,7 +80,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_03() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -95,7 +95,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(3, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(3, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(3, 9))) {
 			objCommon.testCompleted(3, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(3, 10, false, "FAILED");
@@ -105,7 +105,7 @@ public class TestOrangeHRMReports {
 
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_04() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -120,7 +120,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(4, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(4, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(4, 9))) {
 			objCommon.testCompleted(4, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(4, 10, false, "FAILED");
@@ -129,7 +129,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_05() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -146,7 +146,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(5, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(5, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(5, 9))) {
 			objCommon.testCompleted(5, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(5, 10, false, "FAILED");
@@ -155,7 +155,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_06() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -167,7 +167,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(6, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(6, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(6, 9))) {
 			objCommon.testCompleted(6, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(6, 10, false, "FAILED");
@@ -176,7 +176,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_07() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -190,7 +190,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(7, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(7, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(7, 9))) {
 			objCommon.testCompleted(7, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(7, 10, false, "FAILED");
@@ -199,7 +199,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_08() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -215,7 +215,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(8, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(8, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(8, 9))) {
 			objCommon.testCompleted(8, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(8, 10, false, "FAILED");
@@ -224,7 +224,7 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@Test(groups = { "employee-reports" })
 	public void TC_OHRM_EP_09() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EmployeeReports");
@@ -242,7 +242,7 @@ public class TestOrangeHRMReports {
 		Reporter.log("View");
 		objCommon.getTableResult();
 		ExcelUtil.setCellData(9, 9, objCommon.getTableResult());
-		if(objCommon.getTableResult().equals(ExcelUtil.getCellData(9, 9))) {
+		if (objCommon.getTableResult().equals(ExcelUtil.getCellData(9, 9))) {
 			objCommon.testCompleted(9, 10, true, "PASSED");
 		} else {
 			objCommon.testCompleted(9, 10, false, "FAILED");
@@ -251,10 +251,10 @@ public class TestOrangeHRMReports {
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
 		Reporter.log("Save And Close File");
 	}
-	
+
 	@AfterTest(groups = { "employee-reports" })
 	public void afterTestEmployeeReports() throws Exception {
-		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "EmployeeReports" , 10, 10);
+		objCommon.writeResult(".\\src\\data\\TestData.xlsx", "EmployeeReports", 10, 10);
 		driver.close();
 		Reporter.log("Closed Browser");
 	}
