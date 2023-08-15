@@ -8,18 +8,17 @@
 		<groups>
 			<run>
 				<include name="add-project"></include>
-				<include name="employee-reports"></include>
-				<!-- <include name="edit-customer"></include>  -->
-				<!-- <include name="delete-customer"></include> -->
+				<include name="edit-customer"></include>
+				<include name="delete-customer"></include>
+				<!--<include name="employee-reports"></include>-->
 			</run>
 		</groups>
 
 		<classes>
 			<class name="testcases.TestOrangeHRMCustomer" />
 			<class name="testcases.TestOrangeHRMProject" />
-			<class name="testcases.TestOrangeHRMReports"></class>
+			<class name="testcases.TestOrangeHRMReports" />
 			<class name="testcases.TestOrangeHRMCustomer" />
-
 		</classes>
 	</test>
 </suite> 

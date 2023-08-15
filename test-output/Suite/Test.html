@@ -55,18 +55,628 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>26/5/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Aug 14 20:54:19 ICT 2023</td>
+<td>Started on:</td><td>Tue Aug 15 12:55:26 ICT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>128 seconds (128203 ms)</td>
+<tr><td>Total time:</td><td>374 seconds (374669 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>add-project </td>
+<td>Included groups:</td><td>edit-customer add-project delete-customer </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.afterTestEditCustomer()'><b>afterTestEditCustomer</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at testcases.TestOrangeHRMCustomer.afterTestEditCustomer(TestOrangeHRMCustomer.java:328)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace953837883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace953837883'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:418)
+	at testcases.TestOrangeHRMCustomer.afterTestEditCustomer(TestOrangeHRMCustomer.java:328)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+	at org.testng.TestRunner.afterRun(TestRunner.java:933)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.afterTest()'><b>afterTest</b><br>Test class: testcases.TestOrangeHRMProject</td>
+<td></td>
+<td>0</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_04()'><b>TC_OHRM_DC_04</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-2085313771" onClick='toggleBox("Output-2085313771", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2085313771" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2085313771">
+Open File<br/>
+Add Sample Customer To Test<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at pageFactory.OrangeHRMCustomer.addCustomer(OrangeHRMCustomer.java:59)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_04(TestOrangeHRMCustomer.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085313771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2085313771'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at pageFactory.OrangeHRMCustomer.addCustomer(OrangeHRMCustomer.java:59)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_04(TestOrangeHRMCustomer.java:263)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+</pre></div></td>
+<td>21</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_04()'><b>TC_OHRM_EC_04</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at util.OrangeHRMCommon.getToastResult(OrangeHRMCommon.java:109)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_EC_04(TestOrangeHRMCustomer.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace913711668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace913711668'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at util.OrangeHRMCommon.getToastResult(OrangeHRMCommon.java:109)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_EC_04(TestOrangeHRMCustomer.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+</pre></div></td>
+<td>27</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_06()'><b>TC_OHRM_DC_06</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-608195686" onClick='toggleBox("Output-608195686", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-608195686" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-608195686">
+Open File<br/>
+Add Sample Customer To Test<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_06(TestOrangeHRMCustomer.java:297)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace608195686", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608195686'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_06(TestOrangeHRMCustomer.java:297)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_03()'><b>TC_OHRM_DC_03</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-1620368915" onClick='toggleBox("Output-1620368915", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1620368915" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1620368915">
+Open File<br/>
+Add Sample Customer To Test<br/>
+Add Sample Customer To Test<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pageFactory.OrangeHRMCustomer.clickMultipleCheckBoxBtn(OrangeHRMCustomer.java:128)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_03(TestOrangeHRMCustomer.java:244)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620368915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620368915'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pageFactory.OrangeHRMCustomer.clickMultipleCheckBoxBtn(OrangeHRMCustomer.java:128)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_03(TestOrangeHRMCustomer.java:244)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>18</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_07()'><b>TC_OHRM_DC_07</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-636996664" onClick='toggleBox("Output-636996664", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-636996664" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-636996664">
+Open File<br/>
+Add Sample Customer To Test<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_07(TestOrangeHRMCustomer.java:314)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace636996664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace636996664'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_07(TestOrangeHRMCustomer.java:314)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,70 +686,326 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_03()'><b>TC_OHRM_AP_03</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>6</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_02()'><b>TC_OHRM_AP_02</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>6</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_13()'><b>TC_OHRM_AP_13</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>4</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_07()'><b>TC_OHRM_AP_07</b><br>Test class: testcases.TestOrangeHRMProject</td>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_12()'><b>TC_OHRM_AP_12</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-1207664059" onClick='toggleBox("Output-1207664059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1207664059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207664059">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Spaces Only To 'Name' Textbox<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
 <td></td>
 <td>4</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
 <tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_08()'><b>TC_OHRM_AP_08</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>3</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_09()'><b>TC_OHRM_AP_09</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>3</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_05()'><b>TC_OHRM_AP_05</b><br>Test class: testcases.TestOrangeHRMProject</td>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_07()'><b>TC_OHRM_EC_07</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
 <td></td>
 <td>7</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
 <tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_10()'><b>TC_OHRM_AP_10</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>4</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_12()'><b>TC_OHRM_AP_12</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>4</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_11()'><b>TC_OHRM_AP_11</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>4</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_06()'><b>TC_OHRM_AP_06</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>5</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_01()'><b>TC_OHRM_AP_01</b><br>Test class: testcases.TestOrangeHRMProject</td>
-<td></td>
-<td>6</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
-<tr>
-<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_04()'><b>TC_OHRM_AP_04</b><br>Test class: testcases.TestOrangeHRMProject</td>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_05()'><b>TC_OHRM_EC_05</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
 <td></td>
 <td>9</td>
-<td>testcases.TestOrangeHRMProject@6440112d</td></tr>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_02()'><b>TC_OHRM_EC_02</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>9</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_07()'><b>TC_OHRM_AP_07</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-99361890" onClick='toggleBox("Output-99361890", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-99361890" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-99361890">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 5 Character, Description Has 10 Characters In Length And Project Admin Is Blank<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_09()'><b>TC_OHRM_AP_09</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-529780160" onClick='toggleBox("Output-529780160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-529780160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-529780160">
+Open File<br/>
+Open Add Project Form<br/>
+Set Project Admin<br/>
+Choose Project Admin And Check It In Suggested List<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_06()'><b>TC_OHRM_AP_06</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-160676935" onClick='toggleBox("Output-160676935", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-160676935" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-160676935">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 5 Characters And Description Has 10 Characters In Length<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_11()'><b>TC_OHRM_EC_11</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>8</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_08()'><b>TC_OHRM_AP_08</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-775864553" onClick='toggleBox("Output-775864553", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-775864553" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-775864553">
+Open File<br/>
+Open Add Project Form<br/>
+Set Customer Name<br/>
+Choose Customer Name And Check It In Suggested List<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_10()'><b>TC_OHRM_EC_10</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>8</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_01()'><b>TC_OHRM_DC_01</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-1291832417" onClick='toggleBox("Output-1291832417", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1291832417" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1291832417">
+Open File<br/>
+Add Sample Customer To Test<br/>
+Open Delete Form<br/>
+Delete Customer<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_04()'><b>TC_OHRM_AP_04</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-1500763116" onClick='toggleBox("Output-1500763116", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1500763116" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1500763116">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 5 Characters And Description Has 0 Character In Length<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_08()'><b>TC_OHRM_EC_08</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>7</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_03()'><b>TC_OHRM_AP_03</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-308970824" onClick='toggleBox("Output-308970824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-308970824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-308970824">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 50 Characters And Description Has 10 Characters In Length<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_05()'><b>TC_OHRM_DC_05</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-1590892341" onClick='toggleBox("Output-1590892341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1590892341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1590892341">
+Open File<br/>
+Open Delete Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_03()'><b>TC_OHRM_EC_03</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>9</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_13()'><b>TC_OHRM_AP_13</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-1526782252" onClick='toggleBox("Output-1526782252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1526782252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1526782252">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Spaces Only To 'Customer Name' Dropbox<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_02()'><b>TC_OHRM_AP_02</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-916024119" onClick='toggleBox("Output-916024119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-916024119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-916024119">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 1 Character And Description Has 10 characters In Length<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_06()'><b>TC_OHRM_EC_06</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>7</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_01()'><b>TC_OHRM_AP_01</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-703957828" onClick='toggleBox("Output-703957828", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-703957828" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-703957828">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With All Valid Required Fields<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_05()'><b>TC_OHRM_AP_05</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-744930836" onClick='toggleBox("Output-744930836", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-744930836" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-744930836">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Name Has 5 Characters And Description Has 255 Characters In Length<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_09()'><b>TC_OHRM_EC_09</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>8</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_EC_01()'><b>TC_OHRM_EC_01</b><br>Test class: testcases.TestOrangeHRMCustomer</td>
+<td></td>
+<td>14</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMCustomer.TC_OHRM_DC_02()'><b>TC_OHRM_DC_02</b><br>Test class: testcases.TestOrangeHRMCustomer<br/>
+<a href="#Output-277780535" onClick='toggleBox("Output-277780535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-277780535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-277780535">
+Open File<br/>
+Add Sample Customer To Test<br/>
+Tick The Empty Box To The Left Of The Customer Name<br/>
+Open Delete Form<br/>
+Delete Customer<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>testcases.TestOrangeHRMCustomer@4d1c005e</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_10()'><b>TC_OHRM_AP_10</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-400473831" onClick='toggleBox("Output-400473831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-400473831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-400473831">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Blank Input To 'Name' Textbox<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
+<tr>
+<td title='testcases.TestOrangeHRMProject.TC_OHRM_AP_11()'><b>TC_OHRM_AP_11</b><br>Test class: testcases.TestOrangeHRMProject<br/>
+<a href="#Output-1224210636" onClick='toggleBox("Output-1224210636", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1224210636" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1224210636">
+Open File<br/>
+Open Add Project Form<br/>
+Enter Information With Blank Input To 'Customer Name' Dropbox<br/>
+Save Form<br/>
+Write Result<br/>
+Save And Close File<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>testcases.TestOrangeHRMProject@7c37508a</td></tr>
 </table><p>
 </body>
 </html>

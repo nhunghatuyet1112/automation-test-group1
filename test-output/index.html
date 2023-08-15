@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">31 methods, 5 failed,   26 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_03">TC_OHRM_DC_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_04">TC_OHRM_DC_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_06">TC_OHRM_DC_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_07">TC_OHRM_DC_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_04">TC_OHRM_EC_04</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -166,6 +200,71 @@
                         <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMProject" class="method navigator-link" hash-for-method="TC_OHRM_AP_13">TC_OHRM_AP_13</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_01">TC_OHRM_DC_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_02">TC_OHRM_DC_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_DC_05">TC_OHRM_DC_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_01">TC_OHRM_EC_01</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_02">TC_OHRM_EC_02</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_03">TC_OHRM_EC_03</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_05">TC_OHRM_EC_05</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_06">TC_OHRM_EC_06</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_07">TC_OHRM_EC_07</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_08">TC_OHRM_EC_08</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_09">TC_OHRM_EC_09</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_10">TC_OHRM_EC_10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.TestOrangeHRMCustomer" class="method navigator-link" hash-for-method="TC_OHRM_EC_11">TC_OHRM_EC_11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -178,6 +277,201 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testcases.TestOrangeHRMCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_03">
+                  </a> <!-- TC_OHRM_DC_03 -->
+                  <span class="method-name">TC_OHRM_DC_03</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[text()=&apos;Name&apos;]/parent::div/child::div[1]//i[@class=&apos;oxd-icon bi-check oxd-checkbox-input-icon&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+	at pageFactory.OrangeHRMCustomer.clickMultipleCheckBoxBtn(OrangeHRMCustomer.java:128)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_03(TestOrangeHRMCustomer.java:244)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_04">
+                  </a> <!-- TC_OHRM_DC_04 -->
+                  <span class="method-name">TC_OHRM_DC_04</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at pageFactory.OrangeHRMCustomer.addCustomer(OrangeHRMCustomer.java:59)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_04(TestOrangeHRMCustomer.java:263)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//button[@class=&apos;oxd-button oxd-button--medium oxd-button--secondary&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_06">
+                  </a> <!-- TC_OHRM_DC_06 -->
+                  <span class="method-name">TC_OHRM_DC_06</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 03&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_06(TestOrangeHRMCustomer.java:297)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_07">
+                  </a> <!-- TC_OHRM_DC_07 -->
+                  <span class="method-name">TC_OHRM_DC_07</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//div[@class=&apos;oxd-table-body&apos;]//div[text()=&apos;Van Lang University - Group 1 - 04&apos;]/parent::div/following-sibling::div[2]//i[@class=&apos;oxd-icon bi-trash&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pageFactory.OrangeHRMCustomer.clickTrashIcon(OrangeHRMCustomer.java:95)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_DC_07(TestOrangeHRMCustomer.java:314)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_04">
+                  </a> <!-- TC_OHRM_EC_04 -->
+                  <span class="method-name">TC_OHRM_EC_04</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at util.OrangeHRMCommon.getToastResult(OrangeHRMCommon.java:109)
+	at testcases.TestOrangeHRMCustomer.TC_OHRM_EC_04(TestOrangeHRMCustomer.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9e5bed866838247f6ec3fb70ca322fe3, findElement {using=xpath, value=//p[@class=&apos;oxd-text oxd-text--p oxd-text--toast-message oxd-toast-content-text&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52277/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9e5bed866838247f6ec3fb70ca322fe3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy19.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -277,6 +571,105 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.TestOrangeHRMCustomer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_01">
+                  </a> <!-- TC_OHRM_DC_01 -->
+                  <span class="method-name">TC_OHRM_DC_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_02">
+                  </a> <!-- TC_OHRM_DC_02 -->
+                  <span class="method-name">TC_OHRM_DC_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_DC_05">
+                  </a> <!-- TC_OHRM_DC_05 -->
+                  <span class="method-name">TC_OHRM_DC_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_01">
+                  </a> <!-- TC_OHRM_EC_01 -->
+                  <span class="method-name">TC_OHRM_EC_01</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_02">
+                  </a> <!-- TC_OHRM_EC_02 -->
+                  <span class="method-name">TC_OHRM_EC_02</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_03">
+                  </a> <!-- TC_OHRM_EC_03 -->
+                  <span class="method-name">TC_OHRM_EC_03</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_05">
+                  </a> <!-- TC_OHRM_EC_05 -->
+                  <span class="method-name">TC_OHRM_EC_05</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_06">
+                  </a> <!-- TC_OHRM_EC_06 -->
+                  <span class="method-name">TC_OHRM_EC_06</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_07">
+                  </a> <!-- TC_OHRM_EC_07 -->
+                  <span class="method-name">TC_OHRM_EC_07</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_08">
+                  </a> <!-- TC_OHRM_EC_08 -->
+                  <span class="method-name">TC_OHRM_EC_08</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_09">
+                  </a> <!-- TC_OHRM_EC_09 -->
+                  <span class="method-name">TC_OHRM_EC_09</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_10">
+                  </a> <!-- TC_OHRM_EC_10 -->
+                  <span class="method-name">TC_OHRM_EC_10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_OHRM_EC_11">
+                  </a> <!-- TC_OHRM_EC_11 -->
+                  <span class="method-name">TC_OHRM_EC_11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -294,11 +687,15 @@
     &lt;groups&gt;
       &lt;run&gt;
         &lt;include name=&quot;add-project&quot;/&gt;
+        &lt;include name=&quot;edit-customer&quot;/&gt;
+        &lt;include name=&quot;delete-customer&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.TestOrangeHRMCustomer&quot;/&gt;
       &lt;class name=&quot;testcases.TestOrangeHRMProject&quot;/&gt;
+      &lt;class name=&quot;testcases.TestOrangeHRMReports&quot;/&gt;
+      &lt;class name=&quot;testcases.TestOrangeHRMCustomer&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -312,7 +709,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -378,6 +775,86 @@
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">delete-customer</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_01</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_02</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_03</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_04</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_05</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_06</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_DC_07</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">edit-customer</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_01</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_02</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_03</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_04</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_05</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_06</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_07</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_08</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_09</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_10</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC_OHRM_EC_11</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -394,64 +871,136 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(31);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC_OHRM_AP_04')
-data.setCell(0, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(0, 3, 9116);
+data.setCell(0, 1, 'TC_OHRM_EC_04')
+data.setCell(0, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(0, 3, 27617);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_OHRM_AP_05')
-data.setCell(1, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(1, 3, 7401);
+data.setCell(1, 1, 'TC_OHRM_DC_04')
+data.setCell(1, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(1, 3, 21688);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_OHRM_AP_03')
-data.setCell(2, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(2, 3, 6512);
+data.setCell(2, 1, 'TC_OHRM_DC_03')
+data.setCell(2, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(2, 3, 18044);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_OHRM_AP_02')
-data.setCell(3, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(3, 3, 6406);
+data.setCell(3, 1, 'TC_OHRM_EC_01')
+data.setCell(3, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(3, 3, 14904);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_OHRM_AP_01')
-data.setCell(4, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(4, 3, 6285);
+data.setCell(4, 1, 'TC_OHRM_DC_07')
+data.setCell(4, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(4, 3, 11682);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_OHRM_AP_06')
-data.setCell(5, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(5, 3, 5938);
+data.setCell(5, 1, 'TC_OHRM_DC_06')
+data.setCell(5, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(5, 3, 11621);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_OHRM_AP_10')
-data.setCell(6, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(6, 3, 4834);
+data.setCell(6, 1, 'TC_OHRM_EC_02')
+data.setCell(6, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(6, 3, 9681);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_OHRM_AP_12')
-data.setCell(7, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(7, 3, 4815);
+data.setCell(7, 1, 'TC_OHRM_EC_05')
+data.setCell(7, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(7, 3, 9341);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_OHRM_AP_07')
-data.setCell(8, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(8, 3, 4511);
+data.setCell(8, 1, 'TC_OHRM_EC_03')
+data.setCell(8, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(8, 3, 9083);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_OHRM_AP_11')
-data.setCell(9, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(9, 3, 4229);
+data.setCell(9, 1, 'TC_OHRM_EC_11')
+data.setCell(9, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(9, 3, 8723);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_OHRM_AP_13')
-data.setCell(10, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(10, 3, 4202);
+data.setCell(10, 1, 'TC_OHRM_EC_10')
+data.setCell(10, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(10, 3, 8586);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_OHRM_AP_09')
+data.setCell(11, 1, 'TC_OHRM_AP_02')
 data.setCell(11, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(11, 3, 3419);
+data.setCell(11, 3, 8212);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_OHRM_AP_08')
-data.setCell(12, 2, 'testcases.TestOrangeHRMProject')
-data.setCell(12, 3, 3050);
+data.setCell(12, 1, 'TC_OHRM_EC_09')
+data.setCell(12, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(12, 3, 8149);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC_OHRM_DC_01')
+data.setCell(13, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(13, 3, 8072);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC_OHRM_EC_08')
+data.setCell(14, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(14, 3, 7965);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC_OHRM_DC_02')
+data.setCell(15, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(15, 3, 7865);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC_OHRM_EC_07')
+data.setCell(16, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(16, 3, 7821);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC_OHRM_EC_06')
+data.setCell(17, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(17, 3, 7775);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC_OHRM_AP_04')
+data.setCell(18, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(18, 3, 6353);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC_OHRM_AP_05')
+data.setCell(19, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(19, 3, 6208);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC_OHRM_AP_06')
+data.setCell(20, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(20, 3, 5909);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC_OHRM_AP_01')
+data.setCell(21, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(21, 3, 5862);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC_OHRM_AP_03')
+data.setCell(22, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(22, 3, 5803);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC_OHRM_AP_07')
+data.setCell(23, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(23, 3, 4814);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC_OHRM_AP_12')
+data.setCell(24, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(24, 3, 4706);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC_OHRM_AP_10')
+data.setCell(25, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(25, 3, 4543);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TC_OHRM_AP_13')
+data.setCell(26, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(26, 3, 4248);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC_OHRM_AP_11')
+data.setCell(27, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(27, 3, 4065);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TC_OHRM_AP_08')
+data.setCell(28, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(28, 3, 3339);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TC_OHRM_AP_09')
+data.setCell(29, 2, 'testcases.TestOrangeHRMProject')
+data.setCell(29, 3, 3123);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TC_OHRM_DC_05')
+data.setCell(30, 2, 'testcases.TestOrangeHRMCustomer')
+data.setCell(30, 3, 1231);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -462,51 +1011,237 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_12</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Spaces Only To 'Name' Textbox</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_07</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 5 Character, Description Has 10 Characters In Length And Project Admin Is Blank</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_09</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Set Project Admin</span>
+                <span class="reporter-method-output">Choose Project Admin And Check It In Suggested List</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_06</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 5 Characters And Description Has 10 Characters In Length</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_08</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Set Customer Name</span>
+                <span class="reporter-method-output">Choose Customer Name And Check It In Suggested List</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_01</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+                <span class="reporter-method-output">Open Delete Form</span>
+                <span class="reporter-method-output">Delete Customer</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_04</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 5 Characters And Description Has 0 Character In Length</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 50 Characters And Description Has 10 Characters In Length</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_05</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Delete Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_13</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Spaces Only To 'Customer Name' Dropbox</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_02</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 1 Character And Description Has 10 characters In Length</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_01</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With All Valid Required Fields</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_05</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Name Has 5 Characters And Description Has 255 Characters In Length</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_02</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+                <span class="reporter-method-output">Tick The Empty Box To The Left Of The Customer Name</span>
+                <span class="reporter-method-output">Open Delete Form</span>
+                <span class="reporter-method-output">Delete Customer</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_10</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Blank Input To 'Name' Textbox</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_AP_11</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Open Add Project Form</span>
+                <span class="reporter-method-output">Enter Information With Blank Input To 'Customer Name' Dropbox</span>
+                <span class="reporter-method-output">Save Form</span>
+                <span class="reporter-method-output">Write Result</span>
+                <span class="reporter-method-output">Save And Close File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_04</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_06</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_03</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC_OHRM_DC_07</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Open File</span>
+                <span class="reporter-method-output">Add Sample Customer To Test</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">18 ignored methods</span>
+            <span class="header-content">9 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.TestOrangeHRMCustomer</span>
+              <span class="ignored-class-name">testcases.TestOrangeHRMReports</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC_OHRM_DC_04</span>
+                <span class="ignored-method-name">TC_OHRM_EP_06</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_05</span>
+                <span class="ignored-method-name">TC_OHRM_EP_05</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_06</span>
+                <span class="ignored-method-name">TC_OHRM_EP_08</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_07</span>
+                <span class="ignored-method-name">TC_OHRM_EP_07</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_11</span>
+                <span class="ignored-method-name">TC_OHRM_EP_02</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_10</span>
+                <span class="ignored-method-name">TC_OHRM_EP_01</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_01</span>
+                <span class="ignored-method-name">TC_OHRM_EP_04</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_03</span>
+                <span class="ignored-method-name">TC_OHRM_EP_03</span>
                 <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_06</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_08</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_07</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_01</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_02</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_DC_02</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_09</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_04</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_03</span>
-                <br/>
-                <span class="ignored-method-name">TC_OHRM_EC_05</span>
+                <span class="ignored-method-name">TC_OHRM_EP_09</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -518,118 +1253,294 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TestOrangeHRMProject</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TestOrangeHRMCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TestOrangeHRMProject</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">7400 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TestOrangeHRMCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">14303 ms</span>
+                <span class="method-start">14108 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_DC_01</span>
+                <span class="method-start">16590 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">24670 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_DC_02</span>
+                <span class="method-start">27938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">35805 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_OHRM_DC_03</span>
+                <span class="method-start">38707 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">56753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_OHRM_DC_04</span>
+                <span class="method-start">59047 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">80736 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_DC_05</span>
+                <span class="method-start">83674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">84906 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_OHRM_DC_06</span>
+                <span class="method-start">87919 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">99541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_OHRM_DC_07</span>
+                <span class="method-start">102074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">113757 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_01</span>
+                <span class="method-start">116692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">131599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_02</span>
+                <span class="method-start">134515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">144197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_03</span>
+                <span class="method-start">147073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">156158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_OHRM_EC_04</span>
+                <span class="method-start">159274 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">186892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_05</span>
+                <span class="method-start">190287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">199629 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_06</span>
+                <span class="method-start">202551 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">210327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_07</span>
+                <span class="method-start">213209 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">221031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_08</span>
+                <span class="method-start">224556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">232522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_09</span>
+                <span class="method-start">235598 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">243748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_10</span>
+                <span class="method-start">246924 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">255511 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_OHRM_EC_11</span>
+                <span class="method-start">259057 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TestOrangeHRMProject</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">267783 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_01</span>
-                <span class="method-start">18702 ms</span>
+                <span class="method-start">270795 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">24992 ms</span>
+                <span class="method-start">276657 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_02</span>
-                <span class="method-start">28089 ms</span>
+                <span class="method-start">279618 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">34497 ms</span>
+                <span class="method-start">287831 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_03</span>
-                <span class="method-start">38263 ms</span>
+                <span class="method-start">290755 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">44777 ms</span>
+                <span class="method-start">296559 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_04</span>
-                <span class="method-start">48051 ms</span>
+                <span class="method-start">299431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">57169 ms</span>
+                <span class="method-start">305785 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_05</span>
-                <span class="method-start">61814 ms</span>
+                <span class="method-start">308756 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">69216 ms</span>
+                <span class="method-start">314965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_06</span>
-                <span class="method-start">72120 ms</span>
+                <span class="method-start">318006 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">78059 ms</span>
+                <span class="method-start">323917 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_07</span>
-                <span class="method-start">80900 ms</span>
+                <span class="method-start">327084 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">85412 ms</span>
+                <span class="method-start">331899 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_08</span>
-                <span class="method-start">88553 ms</span>
+                <span class="method-start">334946 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">91605 ms</span>
+                <span class="method-start">338286 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_09</span>
-                <span class="method-start">94511 ms</span>
+                <span class="method-start">341321 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">97931 ms</span>
+                <span class="method-start">344445 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_10</span>
-                <span class="method-start">100858 ms</span>
+                <span class="method-start">347627 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">105693 ms</span>
+                <span class="method-start">352170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_11</span>
-                <span class="method-start">108760 ms</span>
+                <span class="method-start">355211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">112990 ms</span>
+                <span class="method-start">359277 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_12</span>
-                <span class="method-start">115957 ms</span>
+                <span class="method-start">362426 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">120773 ms</span>
+                <span class="method-start">367133 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_OHRM_AP_13</span>
-                <span class="method-start">123865 ms</span>
+                <span class="method-start">370146 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TestOrangeHRMCustomer</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">128069 ms</span>
+                <span class="method-name">afterTestDeleteCustomer</span>
+                <span class="method-start">374395 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterTestEditCustomer</span>
+                <span class="method-start">374554 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
