@@ -3,7 +3,6 @@ package testcases;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Listeners;
 import org.testng.Reporter;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -13,7 +12,6 @@ import pageFactory.OrangeHRMCustomer;
 import util.ExcelUtil;
 import util.OrangeHRMCommon;
 
-@Listeners(testcases.ListenerTest.class)
 
 public class TestOrangeHRMCustomer {
 	WebDriver driver;
@@ -45,156 +43,201 @@ public class TestOrangeHRMCustomer {
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_01() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.addCustomer(ExcelUtil.getCellData(1, 2), ExcelUtil.getCellData(1, 4));
+		Reporter.log("Add Customer");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(1, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(1, 3), ExcelUtil.getCellData(1, 4), false);
+		Reporter.log("Edit New Customer");
 		ExcelUtil.setCellData(1, 6, objCommon.getToastResult());
 		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(1, 5))) {
 			objCommon.testCompleted(1, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(1, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_02() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(1, 3));
 		objCustomer.editCustomer(ExcelUtil.getCellData(2, 2), ExcelUtil.getCellData(2, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(2, 6, objCommon.getToastResult());
 		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(2, 5))) {
 			objCommon.testCompleted(2, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(2, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_03() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(2, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(3, 2), ExcelUtil.getCellData(3, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(3, 6, objCommon.getToastResult());
 		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(3, 5))) {
 			objCommon.testCompleted(3, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(3, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_04() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(3, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(4, 2), ExcelUtil.getCellData(4, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(4, 6, objCommon.getToastResult());
 		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(4, 5))) {
 			objCommon.testCompleted(4, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(4, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_05() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(4, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(5, 2), ExcelUtil.getCellData(5, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(5, 6, objCommon.getToastResult());
 		if (objCommon.getToastResult().equals(ExcelUtil.getCellData(5, 5))) {
 			objCommon.testCompleted(5, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(5, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_06() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(6, 2), ExcelUtil.getCellData(6, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(6, 6, objCommon.getRequiredText());
 		if (objCommon.getRequiredText().equals(ExcelUtil.getCellData(6, 5))) {
 			objCommon.testCompleted(6, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(6, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_07() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(7, 2), ExcelUtil.getCellData(7, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(7, 6, objCommon.getRequiredText());
 		if (objCommon.getRequiredText().equals(ExcelUtil.getCellData(7, 5))) {
 			objCommon.testCompleted(7, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(7, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_08() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(8, 2), ExcelUtil.getCellData(8, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(8, 6, objCommon.getRequiredText());
 		if (objCommon.getRequiredText().equals(ExcelUtil.getCellData(8, 5))) {
 			objCommon.testCompleted(8, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(8, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_09() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(9, 2), ExcelUtil.getCellData(9, 4), false);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(9, 6, objCommon.getRequiredText());
 		if (objCommon.getRequiredText().equals(ExcelUtil.getCellData(9, 5))) {
 			objCommon.testCompleted(9, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(9, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_10() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(10, 2), ExcelUtil.getCellData(10, 4), true);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(10, 6, objCommon.getCurrentUrl());
 		if (objCommon.getCurrentUrl().contains(ExcelUtil.getCellData(10, 5))) {
 			objCommon.testCompleted(10, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(10, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "edit-customer" })
 	public void TC_OHRM_EC_11() throws Exception {
 		ExcelUtil.openFile(".\\src\\data\\TestData.xlsx", "EditCustomer");
+		Reporter.log("Open File");
 		objCustomer.clickPencilIcon(ExcelUtil.getCellData(5, 2));
 		objCustomer.editCustomer(ExcelUtil.getCellData(11, 2), ExcelUtil.getCellData(11, 4), true);
+		Reporter.log("Edit Customer");
 		ExcelUtil.setCellData(11, 6, objCommon.getCurrentUrl());
 		if (objCommon.getCurrentUrl().contains(ExcelUtil.getCellData(11, 5))) {
 			objCommon.testCompleted(11, 7, true, "PASSED");
 		} else {
 			objCommon.testCompleted(11, 7, false, "FAILED");
 		}
+		Reporter.log("Write Result");
 		ExcelUtil.saveAndCloseFile(".\\src\\data\\TestData.xlsx");
+		Reporter.log("Close File");
 	}
 
 	@Test(groups = { "delete-customer" })
